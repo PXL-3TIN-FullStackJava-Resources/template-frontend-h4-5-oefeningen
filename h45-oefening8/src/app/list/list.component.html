@@ -1,0 +1,3 @@
+<app-search (emitSearchTerm)="catchSearch($event)"></app-search>
+<p *ngIf="searchTerm">search results for: <span [innerHTML]="searchTerm"></span> </p>
+<app-list-item *ngFor="let item of filteredDataset" [item]="item"></app-list-item>
