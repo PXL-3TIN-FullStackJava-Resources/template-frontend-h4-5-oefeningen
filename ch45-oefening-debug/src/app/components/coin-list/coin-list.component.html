@@ -1,3 +1,0 @@
-<h1>Crypto overzicht</h1>
-
-<app-coin-detail *ngFor="let singleCoin in coins let i = index" [coinDetail]="singleCoin" [i]="i" (coinClickedEmitter)="handleEmit($event)"></app-coin-detail>
